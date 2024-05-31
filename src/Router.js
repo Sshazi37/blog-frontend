@@ -5,6 +5,7 @@ import Category from './pages/Category';
 import Search from './pages/Search';
 import Login from './pages/Login';
 import SinglePost from './pages/SinglePost';
+import SignUp from './pages/SignUp';
 
 
 function AppRouter() {
@@ -12,6 +13,7 @@ function AppRouter() {
 
             <Routes>
                 <Route path="/" exact element={<Homepage />} />
+                <Route path="/signup" exact element={<SignUp />} />
                 <Route path="/category"  element={<Category />} />
                 <Route path="/search"  element={<Search />} />
                 <Route path="/login"  element={<Login />} />
